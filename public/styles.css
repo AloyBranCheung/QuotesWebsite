@@ -9,6 +9,10 @@ body {
   background-color: #ffe500;
 }
 /* ************************** General Classes ************************** */
+.headingFont{
+  font-family: 'Merriweather', serif;
+}
+
 .bodyFont{
     font-family: 'Montserrat', sans-serif;    
 }
@@ -24,6 +28,27 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 1%;
+}
+
+.introText{
+  font-size: 3rem;
+}
+
+.introContainer{
+  padding: 3% 7% 5% 7%;
+  color: black;
+  font-weight: bold;
+}
+
+.introCardContainer {
+  padding-left: 20%;
+  padding-right: 7.5%;
+}
+
+.introCard{
+  opacity: 0.9;
+  background-color: #FFFD17;
+  text-align: right;
 }
 
 .navbar {
