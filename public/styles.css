@@ -30,6 +30,11 @@ body {
   padding-top: 1%;
 }
 
+.brandonText{
+  padding-top: 5%;
+  text-align: right;
+}
+
 .introText{
   font-size: 3.0rem;
   color: white;
