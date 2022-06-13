@@ -31,7 +31,9 @@ body {
 }
 
 .introText{
-  font-size: 3rem;
+  font-size: 3.0rem;
+  color: white;
+  padding-right: 5%;
 }
 
 .introContainer{
@@ -41,14 +43,23 @@ body {
 }
 
 .introCardContainer {
-  padding-left: 20%;
-  padding-right: 7.5%;
+  padding: 4% 5% 4% 5%;
 }
 
 .introCard{
   opacity: 0.9;
   background-color: #FFFD17;
   text-align: right;
+  line-height: 2;
+}
+
+.introQuoteText{
+  font-size: 3rem;
+  font-weight: bolder;
+  text-align: left;
+  padding-left: 5%;
+  padding-right: 5%;
+  opacity: 1;
 }
 
 .navbar {
@@ -60,6 +71,15 @@ body {
   opacity: 1;
   padding-right: 2%;
   padding-left: 2%;
+}
+
+@media (max-width: 992px) {
+  .introText{
+    font-size: 2.5rem;
+    color: white;
+    padding: 10% 10%;
+  }
+
 }
 
 
