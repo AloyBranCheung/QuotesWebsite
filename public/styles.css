@@ -7,27 +7,20 @@
 body {
   background-color: #ffe500;
 }
-
 main {
   padding-left: 1%;
   padding-right: 1%;
 }
-
 /* ************************** General Classes ************************** */
 .headingFont {
   font-family: "Merriweather", serif;
 }
-
 .bodyFont {
   font-family: "Montserrat", sans-serif;
 }
-
 .cardBorderRadius {
   border-radius: 50px;
 }
-
-
-
 /* ************************** Header of Page ************************** */
 .bg-img {
   background-image: url("https://cdn.wallpapersafari.com/12/71/woeRid.jpg");
@@ -35,31 +28,27 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 830px;
-  z-index: -1;
   padding: 1.5%;
+  z-index: -1;
 }
-
 .brandonText {
   padding-top: 5%;
   text-align: right;
 }
-
 .introText {
   color: white;
   font-size: 3rem;
   padding-right: 5%;
 }
-
 .introContainer {
   color: black;
   font-weight: bold;
-  padding: 3% 7% 5% 7%;
+  margin-top: 3%;
+  padding: 3% 7% 3% 7%;
 }
-
 .introCardContainer {
   padding: 4% 5% 4% 5%;
 }
-
 .introCard {
   background-color: rgba(255, 253, 23, 0.9);
   border: 0;
@@ -67,7 +56,6 @@ main {
   padding-right: 5%;
   text-align: right;
 }
-
 .introQuoteText {
   font-size: 3rem;
   font-weight: bolder;
@@ -75,7 +63,6 @@ main {
   padding-right: 5%;
   text-align: left;
 }
-
 .navbar {
   background-color: rgba(232, 201, 12, 0.8);
   border-radius: 12.5px;
@@ -86,57 +73,105 @@ main {
   padding-right: 2%;
   top: 2.5%;
 }
-
-
-
-
 /* ************************** Main Body ************************** */
 .parentCard {
-  border: 0;
   backdrop-filter: blur(20px);
   background-color: rgba(255, 255, 255, 0.6);
-}
-
-.cardContainer{
-  margin-top: -5%;
-}
-
-.childCard {
-  padding: 50px;
-  text-align: right;
   border: 0;
 }
-
-.childCardText {
+.cardContainer {
+  margin-top: -5%;
+}
+.childCard {
+  border: 0;
+  padding: 50px;
+  text-align: right;
+}
+.childCardTextL {
   font-size: 50px;
   padding: 5%;
   text-align: left;
 }
-
-.quotePad {
-  padding: 3.5%;
+.childCardTextR {
+  font-size: 50px;
+  padding: 5%;
+  text-align: right;
 }
-
+.quotePad {
+  margin: auto;
+  padding: 2.5%;
+}
+.container {
+  display: flex;
+  width: auto;
+}
+/* Anime Images Panels */
+.animeCol {
+  padding: 2.5%;
+}
+.panel {
+  -webkit-transition: all 700ms ease-in;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 110%;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  flex: 0.5;
+  height: 60vh;
+  margin: 10px;
+  position: relative;
+  transition: all flex 0.7s ease-in;
+}
+.panel.active {
+  flex: 2;
+}
 /* ************************** Footer ************************** */
 .pageFooter {
-  margin-top: 5%;
   margin-bottom: 5%;
-  position: relative;
+  margin-top: 5%;
   padding: 0 10% 0 10%;
+  position: relative;
+  text-align: center;
 }
-
 /* ************************** Responsiveness ************************** */
-
 @media (max-width: 992px) {
+  /* Page Header */
+  .bg-img {
+    min-height: 700px;
+  }
   .introText {
     color: white;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     padding: 10% 10% 0% 10%;
   }
-
+  .introQuoteText {
+    font-size: 1.5rem;
+  }
   .introCardContainer {
-    margin-bottom: 5%;
+    margin-bottom: 1%;
+  }
+  /* Main Card's Child Cards */
+  .childCardTextL {
+    font-size: 25px;
+    padding: 5%;
+    text-align: left;
+  }
+  .childCardTextR {
+    font-size: 25px;
+    padding: 5%;
+    text-align: right;
+  }
+  /* Anime Imagse Panel */
+  .container {
+    width: 100%;
+  }
+  .panel {
+    height: 30vh;
   }
 
-
+  .panel:nth-of-type(2),
+  .panel:nth-of-type(4) {
+    display: none;
+  }
 }

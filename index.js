@@ -8,6 +8,22 @@ AOS.init({
     anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 });
 
+// Anime Panels
+const panels = $(".panel");
+
+function removeActiveClasses (){
+    panels.each(function(index){
+        $(this).removeClass("active");
+    })
+};
+
+panels.each(function(index){
+    $(this).click(function(){
+        removeActiveClasses();
+        $(this).addClass("active");
+    })
+});
+
 
 
 
