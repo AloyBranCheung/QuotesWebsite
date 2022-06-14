@@ -2,107 +2,146 @@
     #E8DB0C - NAVBAR HEADER
     #FFE500 - BODY BACKGROUND
     #E8C90C - FOOTER
-    #FFD30D
+    #FFD30D - PAGE HEADER
     https://colorhunt.co/palette/fffd17e8db0cffe500e8c90c#justCreated */
-
 body {
   background-color: #ffe500;
 }
+
+main {
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
 /* ************************** General Classes ************************** */
-.headingFont{
-  font-family: 'Merriweather', serif;
+.headingFont {
+  font-family: "Merriweather", serif;
 }
 
-.bodyFont{
-    font-family: 'Montserrat', sans-serif;    
+.bodyFont {
+  font-family: "Montserrat", sans-serif;
 }
 
+.cardBorderRadius {
+  border-radius: 50px;
+}
 
 /* ************************** Header of Page ************************** */
-
 .bg-img {
   background-image: url("https://cdn.wallpapersafari.com/12/71/woeRid.jpg");
-  position: relative;
-  min-height: 580px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 830px;
   padding-top: 1%;
+  position: relative;
   z-index: -1;
 }
 
-.brandonText{
+.brandonText {
   padding-top: 5%;
   text-align: right;
 }
 
-.introText{
-  font-size: 3.0rem;
+.introText {
   color: white;
+  font-size: 3rem;
   padding-right: 5%;
 }
 
-.introContainer{
-  padding: 3% 7% 5% 7%;
+.introContainer {
   color: black;
   font-weight: bold;
+  padding: 3% 7% 5% 7%;
 }
 
 .introCardContainer {
   padding: 4% 5% 4% 5%;
 }
 
-.introCard{
-  opacity: 0.9;
-  background-color: #FFFD17;
-  text-align: right;
-  line-height: 2;
-  border-radius: 50px;
+.introCard {
+  background-color: #fffd17;
   border: 0;
+  line-height: 2;
+  opacity: 0.9;
   padding-right: 5%;
+  text-align: right;
 }
 
-.introQuoteText{
+.introQuoteText {
   font-size: 3rem;
   font-weight: bolder;
-  text-align: left;
+  opacity: 1;
   padding-left: 5%;
   padding-right: 5%;
-  opacity: 1;
+  text-align: left;
 }
 
 .navbar {
+  background-color: #e8c90c;
   border-radius: 12.5px;
+  margin-bottom: 1%;
   margin-left: 20%;
   margin-right: 20%;
-  margin-bottom: 1%;
-  background-color: #e8c90c;
   opacity: 1;
-  padding-right: 2%;
   padding-left: 2%;
+  padding-right: 2%;
 }
 
-@media (max-width: 992px) {
-  .introText{
-    font-size: 2.5rem;
-    color: white;
-    padding: 10% 10%;
-  }
+/* .nav-item {
+    border-color: white;
+    border-style: none none none solid;
+    border-width: 3px;
+} */
 
-}
 
 /* ************************** Main Body ************************** */
-.mainCardBody {
-  padding-left: 1%;
-  padding-right: 1%;
+.parentCard {
+  border: 0;
+  backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
+.cardContainer{
+  margin-top: -5%;
+}
+
+.childCard {
+  padding: 50px;
+  text-align: right;
+  border: 0;
+}
+
+.childCardText {
+  font-size: 50px;
+  padding: 5%;
+  text-align: left;
+}
+
+.quotePad {
+  padding: 3.5%;
+}
+
+/* ************************** Footer ************************** */
+.pageFooter {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  position: relative;
+  padding: 0 10% 0 10%;
+}
+
+/* ************************** Responsiveness ************************** */
+
+@media (max-width: 992px) {
+  .introText {
+    color: white;
+    font-size: 2.5rem;
+    padding: 10% 10% 0% 10%;
+  }
+
+  .introCardContainer {
+    margin-bottom: 5%;
+  }
 
 
-
-
-
-
-
-
-
+}
