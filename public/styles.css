@@ -26,6 +26,8 @@ main {
   border-radius: 50px;
 }
 
+
+
 /* ************************** Header of Page ************************** */
 .bg-img {
   background-image: url("https://cdn.wallpapersafari.com/12/71/woeRid.jpg");
@@ -33,9 +35,8 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 830px;
-  padding-top: 1%;
-  position: relative;
   z-index: -1;
+  padding: 1.5%;
 }
 
 .brandonText {
@@ -60,10 +61,9 @@ main {
 }
 
 .introCard {
-  background-color: #fffd17;
+  background-color: rgba(255, 253, 23, 0.9);
   border: 0;
   line-height: 2;
-  opacity: 0.9;
   padding-right: 5%;
   text-align: right;
 }
@@ -71,28 +71,23 @@ main {
 .introQuoteText {
   font-size: 3rem;
   font-weight: bolder;
-  opacity: 1;
   padding-left: 5%;
   padding-right: 5%;
   text-align: left;
 }
 
 .navbar {
-  background-color: #e8c90c;
+  background-color: rgba(232, 201, 12, 0.8);
   border-radius: 12.5px;
-  margin-bottom: 1%;
   margin-left: 20%;
   margin-right: 20%;
   opacity: 1;
   padding-left: 2%;
   padding-right: 2%;
+  top: 2.5%;
 }
 
-/* .nav-item {
-    border-color: white;
-    border-style: none none none solid;
-    border-width: 3px;
-} */
+
 
 
 /* ************************** Main Body ************************** */
