@@ -24,6 +24,18 @@ panels.each(function(index){
     })
 });
 
+// Button toTop
+const toTop = $(".toTop");
+
+$(document).scroll(function() {
+    if ($(document).scrollTop() > 100) {
+        toTop.addClass("active");
+    } else {
+        toTop.removeClass("active");
+    }
+});
+
+
 
 
 

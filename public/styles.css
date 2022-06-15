@@ -3,13 +3,19 @@
     #FFE500 - BODY BACKGROUND
     #E8C90C - FOOTER
     #FFD30D - PAGE HEADER
+    rgba(249, 254, 178, 0.9) - CARD BACKGROUND
     https://colorhunt.co/palette/fffd17e8db0cffe500e8c90c#justCreated */
+    
 body {
   background-color: #ffe500;
 }
 main {
-  padding-left: 1%;
-  padding-right: 1%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 /* ************************** General Classes ************************** */
 .headingFont {
@@ -50,7 +56,7 @@ main {
   padding: 4% 5% 4% 5%;
 }
 .introCard {
-  background-color: rgba(255, 253, 23, 0.9);
+  background-color: rgba(249, 254, 178, 0.9);
   border: 0;
   line-height: 2;
   padding-right: 5%;
@@ -66,11 +72,10 @@ main {
 .navbar {
   background-color: rgba(232, 201, 12, 0.8);
   border-radius: 12.5px;
-  margin-left: 20%;
-  margin-right: 20%;
-  opacity: 1;
   padding-left: 2%;
   padding-right: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
   top: 2.5%;
 }
 /* ************************** Main Body ************************** */
@@ -86,6 +91,7 @@ main {
   border: 0;
   padding: 50px;
   text-align: right;
+  background-color: rgb(249, 254, 178);
 }
 .childCardTextL {
   font-size: 50px;
@@ -134,6 +140,39 @@ main {
   position: relative;
   text-align: center;
 }
+
+/* ************************** Button toTop ************************** */
+.toTop {
+  background: white;
+  position: fixed;
+  bottom: 22px;
+  right: 20px;
+  width: 75px;
+  height: 75px;
+  border-radius: 42.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  background-color: #E8DB0C;
+  color: black;
+  text-decoration: none;
+  opacity:0;
+  pointer-events: none;
+  transition: all .4s;
+}
+
+.toTop.active {
+  bottom:32px;
+  pointer-events: auto;
+  opacity:1;
+}
+
+.toTop:hover{
+  color: white;
+}
+
+
 /* ************************** Responsiveness ************************** */
 @media (max-width: 992px) {
   /* Page Header */

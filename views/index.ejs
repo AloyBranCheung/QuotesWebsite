@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>GOAT 'Quotes'</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/1/1098.png" />
+    <meta name="description" content="A website that shows quotes from APIs like Kanye REST" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&display=swap"
+        rel="stylesheet" />
+
+    <!-- Bootstrap5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- Animate on scroll library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <!-- ********************* Bootstrap navbar/Page Header ********************* -->
+    <div class="bg-img">
+        <!-- ********************* Navbar ********************* -->
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark shadow" data-aos="slide-down">
+            <div class="container-fluid">
+                <a class="navbar-brand fs-2 fw-bold bodyFont" href="#">G/Q</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#quotesAPIbar"
+                    aria-controls="quotesAPIbar" aria-expanded="false" aria-label="Toggle navigation"><span
+                        class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="quotesAPIbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item bodyFont">
+                            <a class="nav-link active fs-6 align-middle text-center fw-semibold" aria-current="page"
+                                href="#kanyeREST">Kanye REST</a>
+                        </li>
+
+                        <li class="nav-item bodyFont">
+                            <a class="nav-link active fs-6 align-middle text-center fw-semibold" aria-current="page"
+                                href="#animeQuotes">Anime Quotes</a>
+                        </li>
+
+                        <li class="nav-item bodyFont">
+                            <a class="nav-link active fs-6 align-middle text-center fw-semibold" aria-current="page"
+                                href="#inspireQuotes">Inspirational Quotes</a>
+                        </li>
+
+                        <li class="nav-item bodyFont">
+                            <a class="nav-link active fs-6 align-middle text-center fw-semibold" aria-current="page"
+                                href="#programQuotes">Programming Quotes</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- ********************* Intro Header ********************* -->
+        <div class="container-fluid introContainer headingFont">
+            <div class="row align-items-center">
+                <div class="col-lg-6 introText bodyFont" data-aos="slide-right">
+                    "Welcome to GOAT 'Quotes'. This websites generates random quotes from APIs such as Kanye REST. Enjoy
+                    :)"
+                    <p class="bodyFont brandonText"> - Brandon</p>
+                </div>
+                <div class="col-lg-6 introCardContainer" data-aos="slide-left">
+                    <div class="card shadow introCard cardBorderRadius">
+                        <div class="card-body">
+                            <blockquote class="blockquote">
+                                <p class="introQuoteText">"It's trash can, not trash can't."</p>
+                                <footer class="blockquote-footer bodyFont">An anonymous wise man</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ********************* Main Body ********************* -->
+    <main>
+        <div class="cardContainer">
+            <div class="card shadow gap-5 p-5 parentCard cardBorderRadius" data-aos="slide-up">
+                <!-- Kanye REST API -->
+                <div id="kanyeREST" class="row">
+                    <div class="col-lg-6 quotePad" data-aos="fade-in" data-aos-delay="200"
+                        data-aos-anchor-placement="bottom-bottom">
+                        <div class="card shadow childCard cardBorderRadius introQuoteText">
+                            <div class="card-body">
+                                <blockquote class="blockquote mb-0">
+                                    <p class="childCardTextL headingFont" id="kanyeApiText"><%= kanyeQuote %></p>
+                                    <footer class="blockquote-footer bodyFont">A wise Kanye REST</footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        Image?
+                    </div>
+                </div>
+
+
+                <!-- Anime Quotes API -->
+                <div id="animeQuotes" class="row">
+                    <div class="col-lg-6 animeCol" data-aos="slide-right" data-aos-delay="200">
+                        <div>
+                            <div class="container">
+                                <div class="panel active" style="background-image: url('/images/anime-1.jpg');">
+                                </div>
+                                <div class="panel" style="background-image: url('/images/anime-2.jpg');">
+                                </div>
+                                <div class="panel" style="background-image: url('/images/anime-3.jpg');">
+                                </div>
+                                <div class="panel" style="background-image: url('/images/anime-4.jpg');">
+                                </div>
+                                <div class="panel" style="background-image: url('/images/anime-5.jpg');">
+                                </div>
+                                <div class="panel" style="background-image: url('/images/anime-6.jpg');">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 quotePad" data-aos="fade-in" data-aos-delay="200">
+                        <div class="card shadow childCard cardBorderRadius introQuoteText">
+                            <div class="card-body">
+                                <blockquote class="blockquote mb-0">
+                                    <p class="childCardTextR headingFont">Weaboo quote</p>
+                                    <footer class="blockquote-footer bodyFont">A weaboo *tips fedora*</footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- inspiration quotes API -->
+                <div id="inspireQuotes" class="row">
+                    <div class="col-lg-6 quotePad" data-aos="fade-in" data-aos-delay="200">
+                        <div class="card shadow childCard cardBorderRadius introQuoteText">
+                            <div class="card-body">
+                                <blockquote class="blockquote mb-0">
+                                    <p class="childCardTextL headingFont">A well-known quote, contained in a blockquote element.</p>
+                                    <footer class="blockquote-footer bodyFont">Someone famous in <cite
+                                            title="Source Title">Source
+                                            Title</cite></footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        Image?
+                    </div>
+                </div>
+
+                <!-- Programming Quotes API -->
+                <div id="programQuotes" class="row">
+                    <div class="col-lg-6">
+                        Image?
+                    </div>
+                    <div class="col-lg-6 quotePad" data-aos="fade-in" data-aos-delay="200">
+                        <div class="card shadow-lg childCard cardBorderRadius introQuoteText">
+                            <div class="card-body">
+                                <blockquote class="blockquote mb-0">
+                                    <p class="childCardTextR headingFont">A well-known quote, contained in a blockquote element.</p>
+                                    <footer class="blockquote-footer bodyFont">Someone famous in <cite
+                                            title="Source Title">Source
+                                            Title</cite></footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- End Cards -->
+        </div>
+        <!-- End Parent Card -->
+    </main>
+
+    <!-- ********************* Footer ********************* -->
+    <footer class="pageFooter" data-aos="slide-left">
+        <div>
+            <div class="row">
+                <div class="col">Github</div>
+                <div class="col">LinkedIn</div>
+                <div class="col">Twitter</div>
+                <div class="col">Instagram</div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Button To Top -->
+    <a href="#" class="toTop">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <!-- ********************* Scripts ********************* -->
+    <script src="https://kit.fontawesome.com/7e4a376dc5.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
+
+<!-- Referneces
+* Anime Panel code by codehishira and edited to fit my page 
+* BootStrap 5
+* AOS Library  -->
