@@ -13,7 +13,7 @@ app.get("/", function(req,res){
   https.get('https://api.kanye.rest/', (response) => {
     response.on('data', (data) => {
       var quote = JSON.parse(data).quote;
-      console.log(quote);
+      console.log("Quote of the Day: " + quote);
       res.render("index", {kanyeQuote: quote});
     });
     }).on('error', (e) => {
