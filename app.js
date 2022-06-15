@@ -2,16 +2,11 @@ const express = require('express');
 const app = express();
 const https = require('https');
 
-// Send static website files
-app.use("/static", express.static("public"))
-app.get("/static", function (req, res) {
-    res.sendFile(__dirname + "/index.html");
-});
-
-// request Kanye REST API
+// request Kanye REST API id="kanyeApiText"
 https.get('https://api.kanye.rest/', (res) => {
   res.on('data', (d) => {
     console.log(JSON.parse(d).quote);
+    var quote = JSON.parse(d).quote;
   });
 }).on('error', (e) => {
   console.error(e);
