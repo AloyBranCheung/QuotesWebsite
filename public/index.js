@@ -36,6 +36,13 @@ $(document).scroll(function() {
     }
 });
 
+// Button click GET data (then why do i need a server????)
+$(".btn").click(function(){
+    $.get("https://api.kanye.rest/", function(data){
+        console.log(data);
+    })
+});
+
 
 
 
