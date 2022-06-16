@@ -24,6 +24,7 @@ panels.each(function(index){
     })
 });
 
+
 // Button toTop
 const toTop = $(".toTop");
 

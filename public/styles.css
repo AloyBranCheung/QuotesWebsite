@@ -94,12 +94,12 @@ html {
   background-color: rgb(249, 254, 178);
 }
 .childCardTextL {
-  font-size: 50px;
+  font-size: 1.5rem;
   padding: 5%;
   text-align: left;
 }
 .childCardTextR {
-  font-size: 50px;
+  font-size: 1.5rem;
   padding: 5%;
   text-align: right;
 }
@@ -111,6 +111,17 @@ html {
   display: flex;
   width: auto;
 }
+
+/* Spotify App */
+.spotifyPlayer{
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
 /* Anime Images Panels */
 .animeCol {
   padding: 2.5%;
@@ -132,6 +143,11 @@ html {
 .panel.active {
   flex: 2;
 }
+
+.credits {
+  text-align: right;
+  padding-right: 5%;
+}
 /* ************************** Footer ************************** */
 .pageFooter {
   margin-bottom: 5%;
@@ -149,7 +165,7 @@ html {
   right: 20px;
   width: 75px;
   height: 75px;
-  border-radius: 42.5%;
+  border-radius: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -210,7 +226,7 @@ html {
   }
 
   .panel:nth-of-type(2),
-  .panel:nth-of-type(4) {
+  .panel:nth-of-type(3) {
     display: none;
   }
 }
