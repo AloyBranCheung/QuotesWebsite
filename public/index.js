@@ -8,6 +8,15 @@ AOS.init({
     anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 });
 
+// spotify player class="spotifyPlayer"
+function quoteHeight () {
+    const cardBodyWidth = $(".card-body").offset();
+    console.log(cardBodyWidth);
+
+};
+
+quoteHeight();
+
 // Anime Panels
 const panels = $(".panel");
 
@@ -36,12 +45,6 @@ $(document).scroll(function() {
     }
 });
 
-// Button click GET data (then why do i need a server????)
-$(".btn").click(function(){
-    $.get("https://api.kanye.rest/", function(data){
-        console.log(data);
-    })
-});
 
 
 
