@@ -25,11 +25,18 @@ panels.each(function(index){
 });
 
 // POST time baby
-// $("#kanyeQuote").click(function(){
-//     $("#kanyeQuote").load("/", function(data){
-//         console.log(data);
-//     });
-// });
+$("#kanyeQuote").click(function(){
+    $("#kanyeApiText").hide().load("/ #kanyeApiText").fadeIn("slow");
+});
+$("#animeQuote").click(function(){
+    $("#animeApiText").hide().load("/ #animeApiText").fadeIn("slow");
+});
+$("#inspireQuote").click(function(){
+    $("#inspireQuoteText").hide().load("/ #inspireQuoteText").fadeIn("slow");
+    $("#inspireAuthorText").hide().load("/ #inspireAuthorText").fadeIn("slow");
+});
+
+
 
 // Button toTop
 const toTop = $(".toTop");

@@ -99,7 +99,7 @@
                                     </p>
                                     <footer class="blockquote-footer bodyFont">A wise Kanye REST</footer>
                                 </blockquote>
-                                <button name="kanyeQuote" id="kanyeQuote" type="button" class="btn btn-warning bodyFont shadow">Anotha' One</button>
+                                <button name="kanyeButton" id="kanyeQuote" type="button" class="btn btn-warning bodyFont shadow">Anotha' One</button>
                             </div>
                         </div>
                     </div>
@@ -174,14 +174,14 @@
                         <div class="card shadow childCard cardBorderRadius introQuoteText">
                             <div class="card-body">
                                 <blockquote class="blockquote mb-0">
-                                    <p class="childCardTextR headingFont">"<%= savedAnimeQuote %>"</p>
+                                    <p class="childCardTextR headingFont" id="animeApiText">"<%= savedAnimeQuote %>"</p>
                                     <footer class="blockquote-footer bodyFont">
                                         <%= savedFromCharacter %> (<cite title="Source Title">
                                                 <%= savedFromAnime %>)
                                             </cite>
                                             <footer>
                                 </blockquote>
-                                <button type="button" class="btn btn-warning bodyFont shadow">Anotha' One</button>
+                                <button type="button" class="btn btn-warning bodyFont shadow" id="animeQuote">Anotha' One</button>
                             </div>
                         </div>
                     </div>
@@ -195,19 +195,19 @@
                                 <div class="card shadow childCard cardBorderRadius introQuoteText">
                                     <div class="card-body">
                                         <blockquote class="blockquote mb-0">
-                                            <p class="childCardTextL headingFont">
+                                            <p class="childCardTextL headingFont" id="inspireQuoteText">
                                                 <%= savedInspireQuote %>
                                             </p>
-                                            <footer class="blockquote-footer bodyFont">
+                                            <footer class="blockquote-footer bodyFont" id="inspireAuthorText">
                                                 <%= savedInspireAuthor %>
                                             </footer>
                                         </blockquote>
-                                        <button type="button" class="btn btn-warning bodyFont shadow">Anotha'
+                                        <button type="button" class="btn btn-warning bodyFont shadow" id="inspireQuote">Anotha'
                                             One</button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6 quotePad justify-content-center signatureCard ">
+                            <div class="col-lg-6 quotePad justify-content-center signatureCard" data-aos="slide-left" data-aos-delay="200">
                                 <div class="card shadow childCard cardBorderRadius introQuoteText footer">
                                     <div class="card-body">
                                         <div>

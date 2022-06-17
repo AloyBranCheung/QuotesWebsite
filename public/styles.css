@@ -43,7 +43,7 @@ html {
   transition-property: background-color;
 }
 .btn:focus {
-  background-color: #53bf9d;
+  background-color: #bd4291;
   border: none;
   color: white;
 }
@@ -118,7 +118,7 @@ html {
   margin-bottom: 5%;
 }
 .childCard {
-  background-color: rgba(249, 76, 102, 0.8);
+  background-color: rgba(249, 76, 102, 0.9);
   border: 0;
   color: white;
   padding: 50px;
@@ -143,8 +143,15 @@ html {
   width: auto;
 }
 /* Kanye REST Spotify Players */
-.spotifyPlayer {
-  margin-left: 0.5%;
+/* .spotifyPlayer {
+  margin-left: 0.25%;
+} */
+
+.carousel-inner {
+  padding-left: 10%;
+  padding-right: 10%;
+  align-items: center;
+  justify-content: center;
 }
 /* Anime Images Panels */
 .animeCol {
@@ -175,7 +182,7 @@ html {
 /* footer card */
 .footer {
   text-align: center;
-  background-color: #bd4291;
+  background-color: rgba(189, 66, 145, 1);
 }
 .signature {
   margin: 5% 0% 1% 0%;
@@ -231,7 +238,6 @@ html {
 }
 /* ************************** Responsiveness ************************** */
 @media (max-width: 992px) {
-  .panel:nth-of-type(2),
   .panel:nth-of-type(3) {
     display: none;
   }

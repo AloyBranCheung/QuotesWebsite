@@ -67,9 +67,9 @@ app.use(express.static("public"));
 app.get("/", getKanye, getAnime, getInspire, renderForm);
 
 // POST time baby
-// app.post("/", function(req, res){
-//   console.log(req);
-// });
+app.post("/", function(req, res){
+  res.redirect("/");
+});
   
 
 // Heroku Port Configuration
