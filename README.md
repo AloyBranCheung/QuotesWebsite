@@ -6,4 +6,4 @@ Node.js Express.js
 
 decided to take a break and practice all the knowledge i've learned so far in a personal 'midterm' project
 
-note to self: refactor code is updating website
+note to self: refactor code if updating website
