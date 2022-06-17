@@ -3,284 +3,295 @@
     #BD4291 - FOOTER
     #FFD30D - PAGE HEADER
     rgba(255, 197, 77, 0.9) - CARD BACKGROUND
-    https://colorhunt.co/palette/fffd17e8db0cffe500e8c90c#justCreated */    
+    https://colorhunt.co/palette/fffd17e8db0cffe500e8c90c#justCreated */
 body {
-    background-color: #53BF9D;
+  background-color: #53bf9d;
 }
 main {
-    padding-left: 5%;
-    padding-right: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 /* ************************** General Classes ************************** */
 .headingFont {
-    font-family: "Merriweather", serif;
+  font-family: "Merriweather", serif;
 }
 .bodyFont {
-    font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
-
 .blockquote-footer {
-    color: #1b2030;
+  color: #1b2030;
 }
-
 .cardBorderRadius {
-    border-radius: 50px;
+  border-radius: 50px;
 }
-
 .btn {
-    border-radius: 50px;
-    width: 100%;
-    margin-top: 5%;
-    color: white;
-    font-weight: bold;
-    background-color: #53BF9D;
-    border: none;
+  background-color: #53bf9d;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  margin-top: 5%;
+  width: 100%;
 }
-
 .btn:hover {
-    background-color:#BD4291;
-    color: white;
-    transition-property: background-color;
-    transition-duration: 250ms;
+  background-color: #bd4291;
+  color: white;
+  transition-duration: 250ms;
+  transition-property: background-color;
 }
-
 .btn:focus {
-    background-color: #53BF9D;
-    color: white;
-    border: none;
+  background-color: #53bf9d;
+  border: none;
+  color: white;
 }
 /* ************************** Header of Page ************************** */
 .bg-img {
-    background-color: #BD4291;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 600px;
-    padding: 1.5%;
-    z-index: -1;
+  background-color: #bd4291;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 600px;
+  padding: 1.5%;
+  z-index: -1;
 }
 .brandonText {
-    padding-top: 5%;
-    text-align: right;
-    font-size: 1.0rem;
+  font-size: 1rem;
+  padding-top: 5%;
+  text-align: right;
 }
 .introText {
-    color: white;
-    font-size: 3rem;
-    padding-right: 5%;
+  color: white;
+  font-size: 3rem;
+  padding-right: 5%;
 }
 .introContainer {
-    color: white;
-    font-weight: bold;
-    margin-top: 3%;
-    padding: 3% 7% 3% 7%;
+  color: white;
+  font-weight: bold;
+  margin-top: 3%;
+  padding: 3% 7% 3% 7%;
 }
 .introCardContainer {
-    padding: 4% 5% 4% 5%;
+  padding: 4% 5% 4% 5%;
 }
 .introCard {
-    background-color: rgba(255, 197, 77, 0.9);
-    border: 0;
-    line-height: 2;
-    padding-right: 5%;
-    text-align: right;
+  background-color: rgba(255, 197, 77, 0.9);
+  border: 0;
+  line-height: 2;
+  padding-right: 5%;
+  text-align: right;
 }
 .introQuoteText {
-    font-size: 2rem;
-    font-weight: bolder;
-    padding-left: 5%;
-    padding-right: 5%;
-    text-align: left;
+  font-size: 2rem;
+  font-weight: bolder;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: left;
 }
 .navbar {
-    background-color: rgba(249, 76, 102,0.8);
-    border-radius: 12.5px;
-    margin-left: 5%;
-    margin-right: 5%;
-    padding-left: 2%;
-    padding-right: 2%;
-    top: 2.5%;
+  background-color: rgba(249, 76, 102, 0.8);
+  border-radius: 12.5px;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-left: 2%;
+  padding-right: 2%;
+  top: 2.5%;
 }
-
 .navbar-brand {
-    pointer-events: none;
+  pointer-events: none;
+}
+.nav-item:hover {
+  opacity: 0.5;
+  transition-duration: 500ms;
+  transition-property: opacity;
+}
+/* ************************** Main Body ************************** */
+.parentCard {
+  backdrop-filter: blur(20px);
+  background-color: rgba(255, 197, 77, 0.9);
+  border: 0;
+}
+.cardContainer {
+  margin-top: -5%;
+  margin-bottom: 5%;
+}
+.childCard {
+  background-color: rgba(249, 76, 102, 0.8);
+  border: 0;
+  color: white;
+  padding: 50px;
+  text-align: right;
+}
+.childCardTextL {
+  font-size: 1.5rem;
+  padding: 5%;
+  text-align: left;
+}
+.childCardTextR {
+  font-size: 1.5rem;
+  padding: 5%;
+  text-align: right;
+}
+.quotePad {
+  margin: auto;
+  padding: 2.5%;
+}
+.container {
+  display: flex;
+  width: auto;
+}
+/* Kanye REST Spotify Players */
+.spotifyPlayer {
+  margin-left: 0.5%;
+}
+/* Anime Images Panels */
+.animeCol {
+  padding: 2.5%;
+}
+.panel {
+  -webkit-transition: all 700ms ease-in;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 110%;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  flex: 0.5;
+  height: 60vh;
+  margin: 10px;
+  position: relative;
+  transition: all flex 0.7s ease-in;
+}
+.panel.active {
+  flex: 2;
+}
+.credits {
+  color: white;
+  padding-right: 5%;
+  text-align: right;
+}
+/* footer card */
+.footer {
+  text-align: center;
+  background-color: #bd4291;
+}
+.signature {
+  margin: 5% 0% 1% 0%;
 }
 
-.nav-item:hover {
+.logos {
+    margin: 1.5%;
+}
+
+.card-body a {
+    color: white;
+    text-decoration: none;
+}
+
+.card-body a:hover{
+    color: white;
+    text-decoration: none;
     opacity: 0.5;
     transition-duration: 500ms;
     transition-property: opacity;
 }
-/* ************************** Main Body ************************** */
-.parentCard {
-    backdrop-filter: blur(20px);
-    background-color: rgba(255, 197, 77, 0.9);
-    border: 0;
-}
-.cardContainer {
-    margin-top: -5%;
-}
-.childCard {
-    background-color: rgba(249, 76, 102, 0.8);
-    border: 0;
-    padding: 50px;
-    text-align: right;
-    color: white;
-}
-.childCardTextL {
-    font-size: 1.5rem;
-    padding: 5%;
-    text-align: left;
-}
-.childCardTextR {
-    font-size: 1.5rem;
-    padding: 5%;
-    text-align: right;
-}
-.quotePad {
-    margin: auto;
-    padding: 2.5%;
-}
-.container {
-    display: flex;
-    width: auto;
-}
-/* Anime Images Panels */
-.animeCol {
-    padding: 2.5%;
-}
-.panel {
-    -webkit-transition: all 700ms ease-in;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: auto 110%;
-    border-radius: 50px;
-    color: #fff;
-    cursor: pointer;
-    flex: 0.5;
-    height: 60vh;
-    margin: 10px;
-    position: relative;
-    transition: all flex 0.7s ease-in;
-}
-.panel.active {
-    flex: 2;
-}
-.credits {
-    padding-right: 5%;
-    text-align: right;
-    color: white;
-}
-/* ************************** Footer ************************** */
-.pageFooter {
-    display: block;
-    background-color: #BD4291;
-    margin-top: 5%;
-    height: 185px;
-    width: auto;
-    padding: 3.5% 1% 3% 1%;
-    position: relative;
-    color: white;
-    font-size: 1.5rem;
-    font-weight: bolder;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
 
-.footerTable{
-    height: auto;
-    width: auto;
-    padding: 1%;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
-
-a, a:hover, a:focus, a:active {
-  text-decoration: none;  
-  color: inherit;
-}
-
-.signature {
-    font-size: 1rem;
-    margin-top: 1%;
-    margin-bottom: 5%;
+.card-body a:active {
+    color: white;
+    text-decoration: none;
 }
 /* ************************** Button toTop ************************** */
 .toTop {
-    align-items: center;
-    background-color: #E8DB0C;
-    border-radius: 50px;
-    bottom: 22px;
-    color: black;
-    display: flex;
-    font-size: 32px;
-    height: 75px;
-    justify-content: center;
-    pointer-events: none;
-    position: fixed;
-    right: 26px;
-    text-decoration: none;
-    transition: all .4s;
-    width: 75px;
-
-  opacity:0;
+  align-items: center;
+  background-color: #e8db0c;
+  border-radius: 50px;
+  bottom: 22px;
+  color: black;
+  display: flex;
+  font-size: 32px;
+  height: 75px;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  right: 26px;
+  text-decoration: none;
+  transition: all 0.4s;
+  width: 75px;
 }
 .toTop.active {
-    bottom:32px;
-    pointer-events: auto;
-
-  opacity:1;
+  bottom: 32px;
+  opacity: 1;
+  pointer-events: auto;
 }
-.toTop:hover{
-    color: white;
+.toTop:hover {
+  color: white;
 }
 /* ************************** Responsiveness ************************** */
 @media (max-width: 992px) {
-    panel:nth-of-type(2),
-    panel:nth-of-type(3) {
-      display: none;
+  .panel:nth-of-type(2),
+  .panel:nth-of-type(3) {
+    display: none;
   }
 
   /* Page Header */
   .bg-img {
-      min-height: 700px;
+    min-height: 550px;
   }
   .introText {
-      color: white;
-      font-size: 1.0rem;
-      padding: 10% 10% 0% 10%;
+    color: white;
+    font-size: 1rem;
+    padding: 10% 10% 0% 10%;
   }
   .introQuoteText {
-      font-size: 1.5rem;
+    font-size: 1.5rem;
   }
   .introCardContainer {
-      margin-bottom: 1%;
+    margin-bottom: 1%;
+  }
+
+  .cardContainer {
+    margin-top: -5%;
+    margin-bottom: 10%;
+  }
+  
+  .childCard {
+    padding: 2.5%;
   }
   /* Main Card's Child Cards */
   .childCardTextL {
-      font-size: 25px;
-      padding: 5%;
-      text-align: left;
+    font-size: 1rem;
+    padding: 2.5%;
+    text-align: left;
   }
   .childCardTextR {
-      font-size: 25px;
-      padding: 5%;
-      text-align: left;
+    font-size: 1rem;
+    padding: 2.5%;
+    text-align: left;
   }
-
-  .spotifyPlayer{
-    margin-left: 29px;
+  .spotifyPlayer {
+    padding-left: 3%;
+    width: 230px;
   }
   /* Anime Imagse Panel */
   .container {
-      width: 100%;
+    width: 100%;
   }
   .panel {
-      height: 30vh;
+    height: 30vh;
   }
+  /* Footer */
+  .footer {
+    font-size: 1rem;
+  }
+  .signature {
+    font-size: 1rem;
+  }
+
+  .signatureCard {
+    margin-top: 10%;
+  }
+
 }

@@ -8,15 +8,6 @@ AOS.init({
     anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 });
 
-// spotify player class="spotifyPlayer"
-function quoteHeight () {
-    const cardBodyWidth = $(".card-body").offset();
-    console.log(cardBodyWidth);
-
-};
-
-quoteHeight();
-
 // Anime Panels
 const panels = $(".panel");
 

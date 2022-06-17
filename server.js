@@ -51,22 +51,6 @@ function getInspire(req, res, next) {
   });
 }
 
-// response ProgrammingQuotes API id=""
-function getProgram(req, res, next) {
-  https.get('https://programming-quotes-api.herokuapp.com/quotes/random', (response) => {
-    response.on('data', (data) => {
-      let programQuote = JSON.parse(data).en;
-      let programAuthor = JSON.parse(data).author;
-
-      res.locals.savedProgramQuote = programQuote;
-      res.locals.savedProgramAuthor = programAuthor;
-      next();
-    });
-  }).on('error', (e) => {
-    console.error(e);
-  });
-}
-
 // renderForm 
 function renderForm(rem, res) {
   res.render("index");
@@ -79,7 +63,7 @@ app.set("view engine", "ejs");
 app.use(express.static("public"));
 
 // API get
-app.get("/", getKanye, getAnime, getInspire, getProgram, renderForm);
+app.get("/", getKanye, getAnime, getInspire, renderForm);
 
 
 // Heroku Port Configuration
