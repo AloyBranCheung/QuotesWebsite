@@ -301,3 +301,10 @@ html {
   }
 
 }
+
+@media (max-width: 500px) {
+  .panel:nth-of-type(2),
+  .panel:nth-of-type(3) {
+    display: none;
+  }
+}
