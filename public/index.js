@@ -24,6 +24,12 @@ panels.each(function(index){
     })
 });
 
+// POST time baby
+// $("#kanyeQuote").click(function(){
+//     $("#kanyeQuote").load("/", function(data){
+//         console.log(data);
+//     });
+// });
 
 // Button toTop
 const toTop = $(".toTop");
@@ -35,6 +41,7 @@ $(document).scroll(function() {
         toTop.removeClass("active");
     }
 });
+
 
 
 
