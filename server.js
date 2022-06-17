@@ -1,3 +1,4 @@
+const { render } = require("ejs");
 const express = require("express");
 const app = express();
 const https = require("https");
@@ -65,9 +66,14 @@ app.use(express.static("public"));
 // API get
 app.get("/", getKanye, getAnime, getInspire, renderForm);
 
+// POST time baby
+// app.post("/", function(req, res){
+//   console.log(req);
+// });
+  
 
 // Heroku Port Configuration
-var port = process.env.PORT;
+let port = process.env.PORT;
 
 if (port == null || port == "") {
   port = 8000;
