@@ -189,25 +189,25 @@ html {
 }
 
 .logos {
-    margin: 1.5%;
+  margin: 1.5%;
 }
 
 .card-body a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
-.card-body a:hover{
-    color: white;
-    text-decoration: none;
-    opacity: 0.5;
-    transition-duration: 500ms;
-    transition-property: opacity;
+.card-body a:hover {
+  color: white;
+  text-decoration: none;
+  opacity: 0.5;
+  transition-duration: 500ms;
+  transition-property: opacity;
 }
 
 .card-body a:active {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 /* ************************** Button toTop ************************** */
 .toTop {
@@ -227,6 +227,7 @@ html {
   text-decoration: none;
   transition: all 0.4s;
   width: 75px;
+  border: 0.25rem solid #bd4291;
 }
 .toTop.active {
   bottom: 32px;
@@ -262,7 +263,7 @@ html {
     margin-top: -5%;
     margin-bottom: 10%;
   }
-  
+
   .childCard {
     padding: 2.5%;
   }
@@ -299,7 +300,6 @@ html {
   .signatureCard {
     margin-top: 10%;
   }
-
 }
 
 @media (max-width: 500px) {
